@@ -98,11 +98,11 @@ target_id_file=c("47487","47637", "47687", "47897", "47941" ,"47948" )
 candidate_id_file=c("40896" ,"40914", "44376","46860" ,"46943" ,"46943")  
    result=PEC(vcf_file_name="example.vcf",                  ###VCF file name
               target_id=target_id_file,                               
-			  candidate_id=candidate_id_file,              
-			  return_result=TRUE,                           ###return result
-			  output_file_name="match_parent",              ###output file name
-			  win_size=10,                                  ###window size
-			  threads=16)                                   ###threads
+              candidate_id=candidate_id_file,              
+              return_result=TRUE,                           ###return result
+              output_file_name="match_parent",              ###output file name
+              win_size=10,                                  ###window size
+              threads=16)                                   ###threads
 ```
 
 ## <u>Output</u>
