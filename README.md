@@ -35,7 +35,7 @@ install.packages(packageurl,repos=NULL,method="libcurl")
 #### Install rPEC on Linux for domestic user
 
 ```R
-packageurl <- "https://gitee.com/qsmei/blupADC/attach_files/828967/download/rPEC_0.1.0_R_x86_64-pc-linux-gnu.tar.gz"
+packageurl <- "https://gitee.com/qsmei/blupADC/attach_files/833809/download/rPEC_0.1.0_R_x86_64-pc-linux-gnu.tar.gz"
 install.packages(packageurl,repos=NULL,method="libcurl")
 ```
 
@@ -49,7 +49,7 @@ install.packages(packageurl,repos=NULL)
 #### Install rPEC on Windows for domestic user
 
 ```R
-packageurl <- "https://gitee.com/qsmei/blupADC/attach_files/828968/download/rPEC_0.1.0.zip"
+packageurl <- "https://gitee.com/qsmei/blupADC/attach_files/833810/download/rPEC_0.1.0.zip"
 install.packages(packageurl,repos=NULL)
 ```
 
