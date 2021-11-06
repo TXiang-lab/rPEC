@@ -25,31 +25,33 @@ Users only need to provide the **haplotype file** in **VCF** format, **target in
 install.packages(c("Rcpp", "RcppArmadillo"))
 ```
 
+Note that the R package `rPEC` can only be installed on R version 4.0 
+
 #### Install rPEC on Linux 
 
 ```R
-packageurl <- "https://github.com/TXiang-lab/rPEC/raw/main/0.1.0/rPEC_0.1.0_R_x86_64-pc-linux-gnu.tar.gz"
+packageurl <- "https://github.com/TXiang-lab/rPEC/blob/main/binary/0.1.0/linux-R-4.0/rPEC_0.1.0_R_x86_64-pc-linux-gnu.tar.gz"
 install.packages(packageurl,repos=NULL,method="libcurl")
 ```
 
 #### Install rPEC on Linux for domestic user
 
 ```R
-packageurl <- "https://gitee.com/qsmei/blupADC/attach_files/833809/download/rPEC_0.1.0_R_x86_64-pc-linux-gnu.tar.gz"
+packageurl <- "https://gitee.com/chuankefu/r-pec/attach_files/873353/download/rPEC_0.1.0_R_x86_64-pc-linux-gnu.tar.gz"
 install.packages(packageurl,repos=NULL,method="libcurl")
 ```
 
 #### Install rPEC on Windows
 
 ```R
-packageurl <- "https://github.com/TXiang-lab/rPEC/raw/main/0.1.0/rPEC_0.1.0.zip"
+packageurl <- "https://github.com/TXiang-lab/rPEC/blob/main/binary/0.1.0/win-R-4.0/rPEC_0.1.0.zip"
 install.packages(packageurl,repos=NULL)
 ```
 
 #### Install rPEC on Windows for domestic user
 
 ```R
-packageurl <- "https://gitee.com/qsmei/blupADC/attach_files/833810/download/rPEC_0.1.0.zip"
+packageurl <- "https://gitee.com/chuankefu/r-pec/attach_files/873352/download/rPEC_0.1.0.zip"
 install.packages(packageurl,repos=NULL)
 ```
 
@@ -94,6 +96,7 @@ Genotype data in VCF format is recommended to be phased by software **Beagle5.2*
 
 ``` R
 library(rPEC)
+setwd(system.file("exampledata", package = "rPEC"))         ###path of example
 target_id_file=c("47487","47637", "47687", "47897", "47941" ,"47948" ) 
 candidate_id_file=c("40896" ,"40914", "44376","46860" ,"46943" ,"46943")  
    result=PEC(vcf_file_name="example.vcf",                  ###VCF file name
