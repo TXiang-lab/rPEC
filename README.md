@@ -4,7 +4,7 @@
 
 -   [Overview](#overview)
 -   [Installation](#installation)
--   [Update](#Updata)
+-   [Update](#Update)
 -   [Data preparation](#Data-preparation)
 -   [Usage](#usage)
 -   [Output](#Output)
@@ -260,15 +260,15 @@ getwd()                                           ###the path of work directory
 target_id_file=c("47487","47637", "47687", "47897", "47941" ,"47948" ) 
 candidate_id_file=c("40896" ,"40914", "44376","46860" ,"46943" ,"46943")  
 result=run_PEC(
-		input_file_name="example",                 ###input file name, no suffix
+        input_file_name="example",                 ###input file name, no suffix
         input_file_path=getwd(),                   ###input file path
-		input_file_type="VCF",                     ###input file type
-		phasing=FALSE,                             ###whether input file need to phase        
+        input_file_type="VCF",                     ###input file type
+        phasing=FALSE,                             ###whether input file need to phase        
         target_id=target_id_file,                  ###id of target individuals
         candidate_id=candidate_id_file,            ###id of candidate individuals        
-		return_result=TRUE,                        ###return result in R or not 
+        return_result=TRUE,                        ###return result in R or not 
         output_file_name="match_parent",           ###output file name
-		output_file_path=getwd(),    	           ###output file path
+        output_file_path=getwd(),    	           ###output file path
         win_size=10,                               ###window size
         threads=16)                                ###threads
 ```
@@ -284,15 +284,15 @@ getwd()                                           ###the path of work directory
 target_id_file=c("47487","47637", "47687", "47897", "47941" ,"47948" ) 
 candidate_id_file=c("40896" ,"40914", "44376","46860" ,"46943" ,"46943")  
 result=run_PEC(
-		input_file_name="example.hmp.txt",         ###input file name, no suffix
+        input_file_name="example.hmp.txt",         ###input file name, no suffix
         input_file_path=getwd(),                   ###input file path
-		input_file_type="Hapmap",                  ###input file type
-		phasing=TRUE,                              ###whether input file need to phase        
+        input_file_type="Hapmap",                  ###input file type
+        phasing=TRUE,                              ###whether input file need to phase        
         target_id=target_id_file,                  ###id of target individuals
         candidate_id=candidate_id_file,            ###id of candidate individuals        
-		return_result=TRUE,                        ###return result in R or not 
+        return_result=TRUE,                        ###return result in R or not 
         output_file_name="match_parent",           ###output file name
-		output_file_path=getwd(),    	           ###output file path
+        output_file_path=getwd(),    	           ###output file path
         win_size=10,                               ###window size
         threads=16)                                ###threads
 ```
