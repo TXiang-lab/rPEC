@@ -107,11 +107,19 @@ Genotype data in VCF format is recommended to be phased by software **Beagle5.2*
 
 PLUS: 
 
+Download linkage of **Beagle5.2** 
+
+https://faculty.washington.edu/browning/beagle/beagle.html#download
+
 command of phasing by software **Beagle5.2** 
 
 ``` {.r}
 java -Xmx50g -jar beagle.5.2.jar gt=genotype_file.vcf out=out_put_file impute=true nthreads=10
 ```
+
+Download linkage of **Eagle2.4**
+
+https://alkesgroup.broadinstitute.org/Eagle/downloads/
 
 command of phasing by software **Eagle2.4**
 
