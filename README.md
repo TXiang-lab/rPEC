@@ -105,7 +105,26 @@ Genotype data in VCF format is recommended to be phased by software **Beagle5.2*
 1       566310  M53     T       A       .       PASS    .       GT      1|0     0|1     1|0     0|1 
 ```
 
+PLUS: 
 
+command of phasing by software **Beagle5.2** 
+
+``` {.r}
+java -Xmx50g -jar beagle.5.2.jar gt=genotype_file.vcf out=out_put_file impute=true nthreads=10
+```
+
+command of phasing by software **Eagle2.4**
+
+``` {.r}
+eagle \
+ --vcf=genotype_file.vcf \
+ --chrom 1 \   ##which chrom to phase, here is chrom 1
+ --outPrefix=out_put_file \
+ --geneticMapFile=Eagle_v2.4.1/tables/genetic_map_1cMperMb.txt \   ##genetic map file provided by Eagle2.4
+ --numThreads=30 \
+ --vcfOutFormat=v \
+ 2>&1 | tee chrom18.log
+```
 
 #### 🌈The second kind of genotype file is genotype file without phasing
 
