@@ -40,8 +40,6 @@ https://github.com/TXiang-lab/blupADC#features
 
 (If users provide the **haplotype file** in **VCF** format and don't  use the function of phasing genotype file of `rPEC`, then don't need to install R package `blupADC`)
 
-Note that the R package `rPEC` can only be installed on R version 4.0 
-
 #### Install rPEC on Linux 
 
 ```R
